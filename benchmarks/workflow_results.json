@@ -1,0 +1,12 @@
+{
+  "scenario": "100 durable 4-step security workflows with human-role approval (automated test authorization)",
+  "runs": 100,
+  "completed": 100,
+  "audit_integrity": true,
+  "latency_ms": {
+    "p50": 6.489,
+    "p95": 7.916,
+    "p99": 8.618
+  },
+  "notes": "In-process API execution. Uses synthetic scenarios and reviewer-key automation; not an LLM accuracy or cloud throughput benchmark."
+}

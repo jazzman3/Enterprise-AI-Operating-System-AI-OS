@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-11-10T17:09:09.338890+00:00",
+  "scenario": "GET /api/v1/catalog \u2014 synthetic deterministic local demo",
+  "requests": 300,
+  "concurrency": 8,
+  "errors": 0,
+  "duration_s": 1.252,
+  "throughput_rps": 239.7,
+  "latency_ms": {
+    "p50": 20.367,
+    "p95": 98.542,
+    "p99": 105.633
+  },
+  "notes": "Local HTTP API benchmark, includes creating per-request client. Not production-scale, agent inference, cloud, or true LLM benchmark."
+}
