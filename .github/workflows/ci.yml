@@ -1,0 +1,43 @@
+name: AI OS CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m aisx_os validate
+      - run: python -m pytest -q tests
+      - run: python -m benchmarks.workflow
+      - name: Start localhost API and benchmark HTTP
+        shell: bash
+        run: |
+          AISX_ALLOW_LOCAL_DEMO=true AISX_DB_PATH=/tmp/aisx_ci.db python -m uvicorn aisx_os.api:app --host 127.0.0.1 --port 8000 > /tmp/aisx-ci-api.log 2>&1 &
+          API_PID=$!
+          trap 'kill "$API_PID" || true' EXIT
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:8000/readyz; then break; fi
+            sleep 1
+          done
+          python benchmarks/run.py --output benchmarks/http_results_ci.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-reports
+          path: |
+            benchmarks/http_results_ci.json
+            benchmarks/workflow_results.json
+  docker-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t aisx-ai-os:${{ github.sha }} .
