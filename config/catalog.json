@@ -1,0 +1,695 @@
+{
+  "schema_version": 1,
+  "departments": [
+    {
+      "id": "executive",
+      "name": "Executive",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "business_development",
+      "name": "Business Development",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "government_contracts",
+      "name": "Government Contracts",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "legal_compliance",
+      "name": "Legal Compliance",
+      "enabled": true,
+      "description": ""
+    },
+    {
+      "id": "commercial_lending",
+      "name": "Commercial Lending",
+      "enabled": false,
+      "description": "Lending is a disabled extension requiring separate regulatory review"
+    }
+  ],
+  "agents": [
+    {
+      "id": "executive_strategy_advisor",
+      "name": "Executive Strategy Advisor",
+      "department": "executive",
+      "description": "Drafts evidence-based executive strategy advisor recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "ai_readiness_assessor",
+      "name": "AI Readiness Assessor",
+      "department": "executive",
+      "description": "Drafts evidence-based ai readiness assessor recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "portfolio_prioritizer",
+      "name": "Portfolio Prioritizer",
+      "department": "executive",
+      "description": "Drafts evidence-based portfolio prioritizer recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "governance_coordinator",
+      "name": "Governance Coordinator",
+      "department": "executive",
+      "description": "Drafts evidence-based governance coordinator recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "performance_analyst",
+      "name": "Performance Analyst",
+      "department": "executive",
+      "description": "Drafts evidence-based performance analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "prospect_researcher",
+      "name": "Prospect Researcher",
+      "department": "business_development",
+      "description": "Drafts evidence-based prospect researcher recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "sales_qualification_analyst",
+      "name": "Sales Qualification Analyst",
+      "department": "business_development",
+      "description": "Drafts evidence-based sales qualification analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "proposal_drafting_specialist",
+      "name": "Proposal Drafting Specialist",
+      "department": "business_development",
+      "description": "Drafts evidence-based proposal drafting specialist recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "crm_insight_analyst",
+      "name": "CRM Insight Analyst",
+      "department": "business_development",
+      "description": "Drafts evidence-based crm insight analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "account_planning_advisor",
+      "name": "Account Planning Advisor",
+      "department": "business_development",
+      "description": "Drafts evidence-based account planning advisor recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "opportunity_screener",
+      "name": "Opportunity Screener",
+      "department": "government_contracts",
+      "description": "Drafts evidence-based opportunity screener recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "solicitation_analyst",
+      "name": "Solicitation Analyst",
+      "department": "government_contracts",
+      "description": "Drafts evidence-based solicitation analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "compliance_matrix_builder",
+      "name": "Compliance Matrix Builder",
+      "department": "government_contracts",
+      "description": "Drafts evidence-based compliance matrix builder recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "bid_no_bid_advisor",
+      "name": "Bid/No-Bid Advisor",
+      "department": "government_contracts",
+      "description": "Drafts evidence-based bid/no-bid advisor recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "teaming_analyst",
+      "name": "Teaming Analyst",
+      "department": "government_contracts",
+      "description": "Drafts evidence-based teaming analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "ai_solutions_architect",
+      "name": "AI Solutions Architect",
+      "department": "engineering",
+      "description": "Drafts evidence-based ai solutions architect recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "agent_orchestration_engineer",
+      "name": "Agent Orchestration Engineer",
+      "department": "engineering",
+      "description": "Drafts evidence-based agent orchestration engineer recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "rag_integration_analyst",
+      "name": "RAG Integration Analyst",
+      "department": "engineering",
+      "description": "Drafts evidence-based rag integration analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "mlops_integration_analyst",
+      "name": "MLOps Integration Analyst",
+      "department": "engineering",
+      "description": "Drafts evidence-based mlops integration analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "quality_assurance_engineer",
+      "name": "Quality Assurance Engineer",
+      "department": "engineering",
+      "description": "Drafts evidence-based quality assurance engineer recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "security_triage_analyst",
+      "name": "Security Triage Analyst",
+      "department": "cybersecurity",
+      "description": "Drafts evidence-based security triage analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "threat_intelligence_analyst",
+      "name": "Threat Intelligence Analyst",
+      "department": "cybersecurity",
+      "description": "Drafts evidence-based threat intelligence analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "security_investigation_analyst",
+      "name": "Security Investigation Analyst",
+      "department": "cybersecurity",
+      "description": "Drafts evidence-based security investigation analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "incident_response_planner",
+      "name": "Incident Response Planner",
+      "department": "cybersecurity",
+      "description": "Drafts evidence-based incident response planner recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "security_governance_analyst",
+      "name": "Security Governance Analyst",
+      "department": "cybersecurity",
+      "description": "Drafts evidence-based security governance analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "financial_planning_analyst",
+      "name": "Financial Planning Analyst",
+      "department": "finance",
+      "description": "Drafts evidence-based financial planning analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "revenue_forecast_analyst",
+      "name": "Revenue Forecast Analyst",
+      "department": "finance",
+      "description": "Drafts evidence-based revenue forecast analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "accounts_receivable_analyst",
+      "name": "Accounts Receivable Analyst",
+      "department": "finance",
+      "description": "Drafts evidence-based accounts receivable analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "project_cost_analyst",
+      "name": "Project Cost Analyst",
+      "department": "finance",
+      "description": "Drafts evidence-based project cost analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "treasury_advisor",
+      "name": "Treasury Advisor",
+      "department": "finance",
+      "description": "Drafts evidence-based treasury advisor recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "operations_planner",
+      "name": "Operations Planner",
+      "department": "operations",
+      "description": "Drafts evidence-based operations planner recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "vendor_coordinator",
+      "name": "Vendor Coordinator",
+      "department": "operations",
+      "description": "Drafts evidence-based vendor coordinator recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "delivery_project_manager",
+      "name": "Delivery Project Manager",
+      "department": "operations",
+      "description": "Drafts evidence-based delivery project manager recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "service_quality_analyst",
+      "name": "Service Quality Analyst",
+      "department": "operations",
+      "description": "Drafts evidence-based service quality analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "resource_allocation_analyst",
+      "name": "Resource Allocation Analyst",
+      "department": "operations",
+      "description": "Drafts evidence-based resource allocation analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "policy_review_analyst",
+      "name": "Policy Review Analyst",
+      "department": "legal_compliance",
+      "description": "Drafts evidence-based policy review analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "contract_review_analyst",
+      "name": "Contract Review Analyst",
+      "department": "legal_compliance",
+      "description": "Drafts evidence-based contract review analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "regulatory_research_analyst",
+      "name": "Regulatory Research Analyst",
+      "department": "legal_compliance",
+      "description": "Drafts evidence-based regulatory research analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "privacy_impact_analyst",
+      "name": "Privacy Impact Analyst",
+      "department": "legal_compliance",
+      "description": "Drafts evidence-based privacy impact analyst recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    },
+    {
+      "id": "audit_evidence_coordinator",
+      "name": "Audit Evidence Coordinator",
+      "department": "legal_compliance",
+      "description": "Drafts evidence-based audit evidence coordinator recommendations for human review.",
+      "capabilities": [
+        "analyze",
+        "draft",
+        "summarize"
+      ],
+      "mode": "deterministic_safe_demo"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "executive_ai_assessment",
+      "name": "Executive AI Assessment",
+      "steps": [
+        {
+          "agent_id": "ai_readiness_assessor",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "portfolio_prioritizer",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "governance_coordinator",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "government_bid",
+      "name": "Government Bid Qualification",
+      "steps": [
+        {
+          "agent_id": "opportunity_screener",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "solicitation_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "compliance_matrix_builder",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "bid_no_bid_advisor",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "enterprise_rag",
+      "name": "Enterprise RAG Service Review",
+      "steps": [
+        {
+          "agent_id": "rag_integration_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "ai_solutions_architect",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "quality_assurance_engineer",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "mlops_release",
+      "name": "MLOps Deployment Review",
+      "steps": [
+        {
+          "agent_id": "mlops_integration_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "quality_assurance_engineer",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "security_governance_analyst",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "security_incident",
+      "name": "Security Incident Investigation",
+      "steps": [
+        {
+          "agent_id": "security_triage_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "threat_intelligence_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "security_investigation_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "incident_response_planner",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "client_proposal",
+      "name": "Client Proposal Review",
+      "steps": [
+        {
+          "agent_id": "prospect_researcher",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "sales_qualification_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "proposal_drafting_specialist",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "financial_review",
+      "name": "Financial Planning Review",
+      "steps": [
+        {
+          "agent_id": "financial_planning_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "project_cost_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "treasury_advisor",
+          "requires_approval": true
+        }
+      ]
+    },
+    {
+      "id": "policy_review",
+      "name": "Contract and Compliance Review",
+      "steps": [
+        {
+          "agent_id": "contract_review_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "privacy_impact_analyst",
+          "requires_approval": false
+        },
+        {
+          "agent_id": "audit_evidence_coordinator",
+          "requires_approval": true
+        }
+      ]
+    }
+  ]
+}

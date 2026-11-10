@@ -1,0 +1,15 @@
+digraph G {
+ graph [bgcolor="#0a1427",fontname="DejaVu Sans",label="AISX Enterprise AI Operating System 3.0 — Verified Local Architecture",labelloc=t,fontsize=22,fontcolor="#eef6ff",pad=0.4,ranksep=0.65,nodesep=0.4];
+ node [shape=box,style="rounded,filled",color="#4c78aa",fillcolor="#172d4b",fontcolor="#edf6ff",fontsize=12,fontname="DejaVu Sans",margin="0.20,0.14"];
+ edge [color="#7fa7d6",arrowsize=.7];
+ users [label="Employees / Executives / Reviewers\nWeb Dashboard & API Clients",fillcolor="#254b76"];
+ api [label="FastAPI Control Plane\nBearer-key auth • Tenant scoping • Role checks"];
+ orch [label="Durable Workflow Orchestrator\n8 workflows • Approval-gated progression",fillcolor="#275d70"];
+ reg [label="Agent Registry\n40 active roles • 9 groups\nLending group disabled"];
+ prov [label="Agent Execution Provider\nSafe deterministic draft mode only",fillcolor="#295e58"];
+ db [label="SQLite WAL (local persistence)\nRuns • Step outputs • Approvals",fillcolor="#35365f"];
+ audit [label="Audit Hash Chain\nIntegrity verification • Not externally anchored",fillcolor="#4a345b"];
+ obs [label="Metrics / Health / Readiness\nPrometheus exposition",fillcolor="#403e6b"];
+ integrations [label="Future service adapter contracts\nEnterprise RAG • MLOps • SentinelForge\nNOT connected yet",style="rounded,dashed,filled",fillcolor="#222938"];
+ users -> api;api->orch;api->obs;orch->reg;reg->prov;orch->db;orch->audit;prov->integrations [style=dashed];
+}
